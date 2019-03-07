@@ -7,7 +7,7 @@ public class LifeCount : MonoBehaviour
 {
     public TextMeshProUGUI lifeCounter;
     public TextMeshProUGUI gameMessage;
-    private int counter = 5;
+    private int counter = 100;
     // Start is called before the first frame update
     void Start()
     {

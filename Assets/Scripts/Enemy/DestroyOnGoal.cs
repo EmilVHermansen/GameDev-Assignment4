@@ -9,21 +9,27 @@ public class DestroyOnGoal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy")
         {
             Destroy(other.gameObject);
             lifecount.Decrement();
+            GameObject[] towers = GameObject.FindGameObjectsWithTag("Tower");
+
+            //foreach (GameObject tower in towers)
+            //{
+            //    tower.GetComponent<ShootProjectile>;
+            //}
         }
     }
 }
