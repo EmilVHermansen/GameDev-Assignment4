@@ -30,6 +30,7 @@ public class SpawnAgents : MonoBehaviour
     void updateText()
     {
         waveCounter.text = "Wave: " + waveNumber;
+        waveCounter.fontSize = 20 + waveNumber * 2;
     }
 
     public bool CheckPath()

@@ -32,8 +32,17 @@ public class CurrencyController : MonoBehaviour
         money -= amount;
         UpdateText();
     }
+
+    public void SellTower(int amount)
+    {
+        
+        money += Mathf.RoundToInt(amount * 0.5f);
+        UpdateText();
+
+    }
     void UpdateText()
     {
         moneyCounter.text = "Money: " + money;
+        moneyCounter.fontSize = 10 + (money * 0.1f);
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 public class ShootProjectile : MonoBehaviour
 {
     [SerializeField] GameObject projectile;
-    public int damage;
+    
     //public List<Collider> hitColliders = new List<Collider>();
     Collider[] hitColliders;
     public int radius;
@@ -36,8 +36,6 @@ public class ShootProjectile : MonoBehaviour
             {
                 GameObject firstEnemy = hitColliders[0].gameObject;
 
-                print(hitColliders.Length);
-                print(firstEnemy.transform.position);
 
 
                 GameObject clone = Instantiate(projectile, new Vector3(transform.position.x, transform.position.y + 3, transform.position.z), transform.rotation,transform);

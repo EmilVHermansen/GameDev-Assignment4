@@ -23,8 +23,7 @@ public class EnemyHitPoints : MonoBehaviour
     {
         if(collision.gameObject.tag == "Projectile")
         {
-            hp -= collision.gameObject.GetComponentInParent<ShootProjectile>().damage;
-            print(hp);
+            hp -= collision.gameObject.GetComponentInParent<TowerInfo>().damage;
             Destroy(collision.gameObject);
             if(hp <= 0)
             {
