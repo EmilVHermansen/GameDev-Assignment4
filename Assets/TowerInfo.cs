@@ -33,7 +33,7 @@ public class TowerInfo : MonoBehaviour
             case 1:
                 IncreaseDamage(Mathf.RoundToInt(damage * 1.2f));
                 
-                transform.localScale += new Vector3(0.2f, 0f, 0.2f);
+                transform.localScale += new Vector3(0.1f, 0f, 0.1f);
                 m_Material.color = Color.blue;
                 lvl++;
                 return true;
@@ -41,7 +41,7 @@ public class TowerInfo : MonoBehaviour
             case 2:
                 IncreaseDamage(Mathf.RoundToInt(damage * 1.2f));
                
-                transform.localScale += new Vector3(0.2f, 0f, 0.2f);
+                transform.localScale += new Vector3(0.1f, 0f, 0.1f);
                 m_Material.color = Color.black;
                 lvl++;
                 return true;

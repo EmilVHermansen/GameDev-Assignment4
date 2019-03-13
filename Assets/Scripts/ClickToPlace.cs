@@ -80,7 +80,6 @@ public class ClickToPlace : MonoBehaviour
                 ti = hit.collider.gameObject.GetComponent<TowerInfo>();
                 if (hit.collider.GetType() == typeof(BoxCollider) && ti.price * 1.2f < cc.money)
                 {
-                    print("UwU");
                     if (ti.LevelUp())
                     {
 

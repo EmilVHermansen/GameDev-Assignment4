@@ -43,6 +43,6 @@ public class CurrencyController : MonoBehaviour
     void UpdateText()
     {
         moneyCounter.text = "Money: " + money;
-        moneyCounter.fontSize = 10 + (money * 0.1f);
+        moneyCounter.fontSize = 10 + (money * 0.05f);
     }
 }

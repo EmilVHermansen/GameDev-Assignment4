@@ -24,7 +24,7 @@ public class DestroyOnGoal : MonoBehaviour
         {
             Destroy(other.gameObject);
             lifecount.Decrement();
-            GameObject[] towers = GameObject.FindGameObjectsWithTag("Tower");
+            //GameObject[] towers = GameObject.FindGameObjectsWithTag("Tower");
 
             //foreach (GameObject tower in towers)
             //{
